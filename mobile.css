@@ -1,6 +1,6 @@
 /* -------- Mobile Screens ------------------- */
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
   /* Header and Navigation */
 
   header {
@@ -99,7 +99,6 @@
     height: 300px;
     max-width: 100%;
     margin-top: 50px;
-    animation: beaming-animation 5s infinite;
   }
 
   .bitcoin {
@@ -135,7 +134,7 @@
   }
 
   .support__section-heading {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     font-size: 1.4em;
     line-height: 48px;
     text-align: center;
@@ -207,6 +206,8 @@
     width: 60px;
   }
 
+  /* Join Us Section */
+
   .join__section {
     margin-top: 20px;
   }
@@ -263,7 +264,8 @@
 
   .join-btn {
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -317,14 +319,14 @@
   }
 
   .list-item h5 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     font-size: 3em;
     line-height: 48px;
     color: white;
   }
 
   .list-item p {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     font-size: 1em;
     font-weight: 600;
     line-height: 40px;
@@ -420,7 +422,7 @@
   }
 
   .blog {
-    font-family: myFont;
+    font-family: paragraphFont;
     background-color: #e7d2ff;
     display: inline-block;
     padding: 5px 13px;
@@ -516,7 +518,7 @@
   }
 
   .mentorship-btn {
-    background-color: #7d0bfe;
+    background-color: var(--primaryColor);
     border: none;
     color: white;
     margin-top: 47px;
@@ -612,7 +614,7 @@
     font-size: 2.5em;
     line-height: 66px;
     letter-spacing: -0.04em;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     margin-bottom: 12px;
     text-align: center;
   }
@@ -642,7 +644,7 @@
   }
   
   .event__text h4 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     font-size: 2em;
     line-height: 48px;
     margin-bottom: 20px;
@@ -659,7 +661,7 @@
     font-size: 2.5em;
     line-height: 66px;
     letter-spacing: -0.04em;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     margin-bottom: 32px;
     text-align: center;
     display: flex;
@@ -732,13 +734,13 @@
   
   .reviewer__bio h5 {
     letter-spacing: -0.04em;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--headerFont);
     font-size: 1.2em;
   }
   
   .review__message {
     letter-spacing: -0.04em;
-    font-family: myFont;
+    font-family: paragraphFont;
     font-size: 1.2em;
     line-height: 30px;
   }
@@ -770,7 +772,7 @@ footer {
   }
   
   .form__text {
-    font-family: myFont;
+    font-family: paragraphFont;
     font-size: 1.1em;
     color: white;
     margin-top: 20px;
@@ -795,8 +797,8 @@ footer {
   
   .link__header,
   .link__header-two {
-    color: #7d0bfe;
-    font-family: "Space Grotesk", sans-serif;
+    color: var(--primaryColor);
+    font-family: var(--headerFont);
     font-size: 2em;
     margin-bottom: 10px;
   }
@@ -821,7 +823,7 @@ footer {
   }
   
   .footer__copyright {
-    background-color: #7d0bfe;
+    background-color: var(--primaryColor);
     text-align: center;
     padding: 20px 0;
     color: white;

@@ -170,7 +170,6 @@ main {
   width: 500px;
   height: 475px;
   max-width: 100%;
-  animation: beaming-animation 5s infinite;
 }
 
 .bitcoin {
@@ -354,9 +353,6 @@ main {
 }
 
 .analysis__container {
-  width: 85%;
-  max-width: 1300px;
-  margin: auto;
   background-color: black;
   border-radius: 16px;
 }
@@ -389,14 +385,14 @@ main {
 }
 
 .list-item h5 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 3em;
   line-height: 48px;
   color: white;
 }
 
 .list-item p {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 1em;
   font-weight: 600;
   line-height: 40px;
@@ -437,7 +433,7 @@ main {
 }
 
 .text__content h4 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 3em;
   line-height: 48px;
   color: #7d0bfe;
@@ -445,7 +441,7 @@ main {
 }
 
 .text__content h5 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 2.5em;
   line-height: 48px;
   margin-bottom: 40px;
@@ -453,7 +449,7 @@ main {
 
 .text__content p,
 .event__text p {
-  font-family: myFont;
+  font-family: paragraphFont;
   font-size: 1.125em;
   line-height: 28px;
   margin-bottom: 30px;
@@ -462,7 +458,7 @@ main {
 /* Highlights */
 
 .highlights-heading {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 3em;
   line-height: 48px;
   margin-bottom: 40px;
@@ -497,7 +493,7 @@ main {
 
 .highlight__item h6 {
   margin: 32px 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-weight: 600;
   font-size: 1.5em;
   line-height: 130%;
@@ -508,7 +504,7 @@ main {
   letter-spacing: 0.2px;
   font-size: 0.8em;
   line-height: 25px;
-  font-family: homeFont;
+  font-family: headingTitleFont;
   color: #7d0bfe;
 }
 
@@ -533,14 +529,14 @@ main {
 }
 
 .text h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 3em;
   line-height: 60px;
   margin-bottom: 40px;
 }
 
 .text p {
-  font-family: myFont;
+  font-family: paragraphFont;
   font-size: 1.125em;
   line-height: 28px;
   margin-bottom: 30px;
@@ -549,7 +545,7 @@ main {
 
 .sponsors__img {
   width: 50%;
-  background-color: #7d0bfe;
+  background-color: var(--primaryColor);
   position: relative;
 }
 
@@ -596,7 +592,7 @@ main {
 }
 
 .mentorship-btn {
-  background-color: #7d0bfe;
+  background-color: var(--primaryColor);
   border: none;
   color: white;
   margin-top: 47px;
@@ -665,7 +661,7 @@ main {
   font-size: 3.375em;
   line-height: 66px;
   letter-spacing: -0.04em;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   margin-bottom: 32px;
 }
 
@@ -690,7 +686,7 @@ main {
   font-size: 3.375em;
   line-height: 66px;
   letter-spacing: -0.04em;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   margin-bottom: 32px;
   text-align: center;
 }
@@ -698,7 +694,6 @@ main {
 .events__item-one {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   gap: 150px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -707,7 +702,6 @@ main {
 .events__item-two {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   gap: 150px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -720,7 +714,7 @@ main {
 }
 
 .event__text h4 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 2.5em;
   line-height: 48px;
   margin-bottom: 20px;
@@ -737,7 +731,7 @@ main {
   font-size: 3.375em;
   line-height: 66px;
   letter-spacing: -0.04em;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   margin-bottom: 32px;
   text-align: center;
   display: flex;
@@ -805,7 +799,7 @@ main {
 
 .reviewer__bio h5 {
   letter-spacing: -0.04em;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--headerFont);
   font-size: 1.2em;
 }
 
@@ -842,7 +836,7 @@ footer {
 }
 
 .form__text {
-  font-family: myFont;
+  font-family: paragraphFont;
   font-size: 1.1em;
   color: white;
   margin-top: 20px;
@@ -865,14 +859,14 @@ footer {
 
 .link__header,
 .link__header-two {
-  color: #7d0bfe;
-  font-family: "Space Grotesk", sans-serif;
+  color: var(--primaryColor);
+  font-family: var(--headerFont);
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 .footer-link {
-  font-family: myFont;
+  font-family: paragraphFont;
   font-size: 1.2em;
   display: flex;
   gap: 80px;
@@ -891,11 +885,11 @@ footer {
 }
 
 .footer__copyright {
-  background-color: #7d0bfe;
+  background-color: var(--primaryColor);
   text-align: center;
   padding: 20px 0;
   color: white;
-  font-family: myFont;
+  font-family: paragraphFont;
   font-size: 1.2em;
 }
 
